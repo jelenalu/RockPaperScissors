@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="rps.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, paper, scissors</title>
+  </head>
+  <body class="grid">
+    <header>
+      <h3>ROCK, PAPER, SCISSORS</h3>
+    </header>
+    <main class="display">
+      <table class="table-m" id="table-rps">
+        <tr>
+          <td>
+            <img
+              src="game_icons/rock_64.png"
+              alt="rock"
+              id="rock"
+              onclick="rpsGame(this)"
+            />
+          </td>
+          <td>
+            <img
+              src="game_icons/paper_64.png"
+              alt="paper"
+              id="paper"
+              onclick="rpsGame(this)"
+            />
+          </td>
+          <td>
+            <img
+              src="game_icons/scissors_64.png"
+              alt="scissors"
+              id="scissors"
+              onclick="rpsGame(this)"
+            />
+          </td>
+        </tr>
+      </table>
+      <div id="result-wrapper"></div>
+      <div id="results-text"></div>
+    </main>
+    <footer>
+      <p>
+        Made with<img src="heart.png" alt="heart" class="heart" />
+        <img src="heart_24.png" alt="heart" class="heart_24" /> by Jelena
+      </p>
+    </footer>
+    <div></div>
+    <script src="rps.js"></script>
+  </body>
+</html>
